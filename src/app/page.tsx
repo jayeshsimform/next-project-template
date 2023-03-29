@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import React from "react";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import styles from "./page.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -18,7 +19,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -87,5 +88,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
