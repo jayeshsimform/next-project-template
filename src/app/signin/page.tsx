@@ -1,7 +1,7 @@
-import React from 'react';
-import SignIn from '../components/SignIn';
+import React from "react";
+import SignIn from "../components/SignIn";
 
-const page = () => {
+const page = (): JSX.Element => {
   return (
     <div>
       <SignIn />
