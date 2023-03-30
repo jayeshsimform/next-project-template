@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  app:
+    image: next-project-setup
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+      - ./styles:/app/styles
+    env_file:
+      - ./.env.local
